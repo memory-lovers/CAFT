@@ -1,12 +1,12 @@
 # CAFT: Copy As Formatted Table
 
-*Copy Multi Table Format Add-in* is a Excel Add-in that copies the selected cells as a table with multiple formats.
+**CAFT** is a Excel Add-in that copies the selected cells as a table with multiple formats.
 It support below formats.
 
-* Markdown: https://daringfireball.net/projects/markdown/
-* Trac: https://trac.edgewall.org/
-* PukiWiki: https://pukiwiki.osdn.jp/
-* XPlanner-plus: https://ja.osdn.net/projects/sfnet_xplanner-plus/
+* Markdown(https://daringfireball.net/projects/markdown/)
+* Trac(https://trac.edgewall.org/)
+* PukiWiki(https://pukiwiki.osdn.jp/)
+* XPlanner-plus(https://ja.osdn.net/projects/sfnet_xplanner-plus/)
 
 ## Installation/Uninstallation
 
@@ -24,35 +24,41 @@ And, if you want to uninstall this Add-In, Please execute `Uninstall.vbs`.
 
 ### Example: Markdown
 
-> | Header | Header | Header |
-> |:------:|:-------|-------:|
-> | Text   | Text   | Text   |
-> | Text   | Text   | Text   |
-> | Text   | Text   | Text   |
+```
+| Header | Header | Header |
+|:------:|:-------|-------:|
+| Text   | Text   | Text   |
+| Text   | Text   | Text   |
+| Text   | Text   | Text   |
+```
 
 
 ### Example: Trac
 
-> || **Head** || **Head** ||
-> || Text     || Text     ||
-> || Text     || Text     ||
-> || Text     || Text     ||
-
+```
+|| **Head** || **Head** ||
+|| Text     || Text     ||
+|| Text     || Text     ||
+|| Text     || Text     ||
+```
 
 ### Example: Pukiwiki
 
-> |~Header| Header| Header|
-> | Text  | Text  | Text  |
-> | Text  | Text  | Text  |
-> | Text  | Text  | Text  |
-
+```
+|~Header| Header| Header|
+| Text  | Text  | Text  |
+| Text  | Text  | Text  |
+| Text  | Text  | Text  |
+```
 
 ### Example: XPlanner-plus
 
-> | *Header* | *Header* | *Header* |
-> | Text     | Text     | Text     |
-> | Text     | Text     | Text     |
-> | Text     | Text     | Text     |
+```
+| *Header* | *Header* | *Header* |
+| Text     | Text     | Text     |
+| Text     | Text     | Text     |
+| Text     | Text     | Text     |
+```
 
 ## Licence
 MIT
