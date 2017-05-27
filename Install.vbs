@@ -1,5 +1,4 @@
 Const ADDIN_NAME="CAFT"
-Const FILE_NAME=ADDIN_NAME&".xlam"
 
 Call Exec
 
@@ -16,11 +15,11 @@ Sub Exec()
 
     'Set install path for Add-In
     strAdPath = objExcel.Application.UserLibraryPath
-    strAdCp   = objFileSys.BuildPath(strAdPath, FILLE_NAME)
+    strAdCp   = objFileSys.BuildPath(strAdPath, ADDIN_NAME & ".xlam")
 
     'Set target Add-In location path
     strMyPath = Replace(WScript.ScriptFullName, WScript.ScriptName, "")
-    strMyCp   = objFileSys.BuildPath(strMyPath, FILLE_NAME)
+    strMyCp   = objFileSys.BuildPath(strMyPath, ADDIN_NAME & ".xlam")
 
     'Copy target Add-In
     objFileSys.CopyFile strMyCp, strAdCp

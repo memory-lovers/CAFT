@@ -1,5 +1,4 @@
 Const ADDIN_NAME="CAFT"
-Const FILE_NAME=ADDIN_NAME&".xlam"
 
 Call Exec
 
@@ -16,7 +15,7 @@ Sub Exec()
 
     'Set install path for Add-In
     strAdPath = objExcel.Application.UserLibraryPath
-    strAdCp   = objFileSys.BuildPath(strAdPath, FILE_NAME)
+    strAdCp   = objFileSys.BuildPath(strAdPath, ADDIN_NAME & ".xlam")
 
     'Set disable target Add-In for Excel
     objExcel.Workbooks.Add
